@@ -1,8 +1,8 @@
 var app = angular.module('agriCast', []);
 app.controller('appCtrl', function($scope, $http) {
     $scope.login = function(){
-        alert('in');
-        $http.get("/agri-cast/api/ajax/index")
+        alert('in the login');
+        $http.get("http://localhost:8000/lucky/number")
           .then(function(response) {
               console.log(response);
           });
